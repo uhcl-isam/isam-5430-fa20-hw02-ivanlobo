@@ -13,6 +13,14 @@ namespace CSharp.Assignments.Loop1
         {
             Console.Error.WriteLine("Enter the value of n");
             // write your codes here.
+            int n = int.Parse(Console.ReadLine());
+            int i = 1;
+            // write a while loop
+            while (i <= n)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
         }
     }
 }

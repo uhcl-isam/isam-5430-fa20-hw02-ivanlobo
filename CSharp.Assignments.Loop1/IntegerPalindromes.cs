@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net.NetworkInformation;
+using System.Transactions;
+
 namespace CSharp.Assignments.Loop1
 {
     /// <summary>
@@ -18,6 +21,13 @@ namespace CSharp.Assignments.Loop1
         public static void Main()
         {
             // enter sentinel inputs
+            int num;
+            int back;
+            int rem;
+            int div;
+            Console.WriteLine("Enter a Nine digit number:");
+            num = Convert.ToInt32(Console.ReadLine());
+
             // then check the palindrome only once.
         }
     }

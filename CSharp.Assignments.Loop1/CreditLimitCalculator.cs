@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 using static System.Console;
 namespace CSharp.Assignments.Loop1
 {
@@ -27,6 +28,34 @@ namespace CSharp.Assignments.Loop1
         {
             // read in account number
             // Enter your sentinel loop here
+            Console.WriteLine("Please enter your account number:");
+            int accNum = Convert.ToInt32(Console.ReadLine());
+            while (accNum > 0)
+            {
+                Console.WriteLine("Please enter your balance at the start of the month:");
+                int begBal = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter your total charges:");
+                int charge = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter your total credits:");
+                int credit = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter your credit limit:");
+                int limit = Convert.ToInt32(Console.ReadLine());
+                int i = (begBal + charge) - credit;
+                if (i > limit)
+                {
+                    Console.WriteLine($"Your credit balance is {i}");
+                    Console.WriteLine("Credit limit exceeded");
+                }
+                else if (i < limit)
+                {
+                    Console.WriteLine($"Your credit balance is {i}");
+                    Console.WriteLine("You are within your credit limit");
+                }
+                Console.WriteLine("Please enter your account number:");
+                accNum = Convert.ToInt32(Console.ReadLine());
+
+            }
+
         }
     }
 }

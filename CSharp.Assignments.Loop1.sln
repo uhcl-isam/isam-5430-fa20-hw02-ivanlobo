@@ -5,9 +5,14 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Assignments.Selection1", "CSharp.Assignments.Selection1\CSharp.Assignments.Selection1.csproj", "{9036D345-91E4-4DF4-975D-D71F5A45ABEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Assignments.Loop1", "CSharp.Assignments.Loop1\CSharp.Assignments.Loop1.csproj", "{D392838D-6FC2-45BE-A1BF-56E1A2257E9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Assignments.Loop1", "CSharp.Assignments.Loop1\CSharp.Assignments.Loop1.csproj", "{D392838D-6FC2-45BE-A1BF-56E1A2257E9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Assignments.Loop1.Tests", "CSharp.Assignments.Loop1.Tests\CSharp.Assignments.Loop1.Tests.csproj", "{6FE94B96-CBAF-4C25-B004-221FDFE9A733}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Assignments.Loop1.Tests", "CSharp.Assignments.Loop1.Tests\CSharp.Assignments.Loop1.Tests.csproj", "{6FE94B96-CBAF-4C25-B004-221FDFE9A733}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{402C171F-E332-44AB-974B-3A430C8FC118}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

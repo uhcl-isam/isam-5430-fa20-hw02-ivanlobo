@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.ExceptionServices;
+
 namespace CSharp.Assignments.Loop1
 {
     /// <summary>
@@ -14,6 +16,19 @@ namespace CSharp.Assignments.Loop1
         {
             Console.WriteLine("Enter the last number of Fibonacci Sequence of numbers.");
             int end = int.Parse(Console.ReadLine());
+            int num1 = 1;
+            Console.WriteLine("{0},", num1);
+            int num2= 1;
+            Console.WriteLine("{0},", num1);
+            int i = 0;
+            while (i <= end)
+            {
+               i = num1 + num2;
+               Console.WriteLine("{0},",i);
+                num1 = num2;
+                num2 = i;
+
+            }
 
         }
     }

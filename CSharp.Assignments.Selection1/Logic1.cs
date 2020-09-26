@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace CSharp.Assignments.Loop1
@@ -14,7 +15,18 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool CigarParty(int cigars, bool isWeekend)
         {
-            throw new NotImplementedException();
+         if (isWeekend && cigars >= 40)
+            {
+                return true; 
+            }
+         else if (cigars >= 40 && cigars <= 60)
+            {
+                return true; 
+            }
+         else
+            {
+                return false; 
+            }
         }
 
         /// <summary>
@@ -23,9 +35,29 @@ namespace CSharp.Assignments.Loop1
         /// <param name="speed"></param>
         /// <param name="birthday"></param>
         /// <returns></returns>
-        public static int CaughtSpeeding(int speed, bool birthday)
+#pragma warning disable IDE0060 // Remove unused parameter
+        public static bool CaughtSpeeding(int speed, bool isBirthday)
+#pragma warning restore IDE0060 // Remove unused parameter
         {
-            throw new NotImplementedException();
+         if (isBirthday && speed >= 60)
+          {
+             Console.WriteLine("No ticket");
+             return true;
+          }
+         if (speed >= 60 && speed <= 80)
+              {
+                Console.WriteLine("small ticket");
+                return true;
+              }
+          if (speed >= 80)
+            {
+             Console.WriteLine("big ticket");
+             return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -36,8 +68,16 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+            if (a == 6 || b == 6)
+                { return true; }
+            else if (a + b == 6)
+                { return true; }
+            else if (a - b == 6)
+                { return true; }
+            else
+                { return false; }
         }
+
 
         /// <summary>
         /// Return true if the given non-negative number is 1 or 2 more than a multiple of 20.
@@ -47,6 +87,7 @@ namespace CSharp.Assignments.Loop1
         public static bool More20(int num)
         {
             throw new NotImplementedException();
+
         }
 
         /// <summary>
@@ -56,7 +97,16 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool NearTen(int num)
         {
-            throw new NotImplementedException();
+            
+            int rem = num % 10;
+            if (rem <= 2 || rem >=8)
+                {
+                    return true;
+                }    
+            else
+                {
+                    return false;
+                }
         }
 
         /// <summary>
@@ -123,6 +173,7 @@ namespace CSharp.Assignments.Loop1
         public static bool IsHilly(int number)
         {
             throw new NotImplementedException();
+
         }
 
         /// <summary>

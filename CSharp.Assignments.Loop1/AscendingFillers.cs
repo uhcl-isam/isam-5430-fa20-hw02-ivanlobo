@@ -17,6 +17,27 @@ namespace CSharp.Assignments.Loop1
         public static void Main()
         {
             // Complete your loop codes here.
+            int sum = 0;
+            while (true)
+            {
+                var input = (Console.ReadLine());
+                if (input != null)
+                {
+                    int i = Convert.ToInt32(input);
+                    if (i >= 0)
+                    {
+                        i++;
+                    }
+
+                    else
+                    { break; }
+                    sum = sum + i;
+                }
+                else
+                { break; }
+                Console.WriteLine(sum);
+            }
+
         }
     }
 }
